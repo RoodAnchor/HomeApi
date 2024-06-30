@@ -53,10 +53,12 @@ namespace HomeApi.Data.Repositories
 
             if (!string.IsNullOrEmpty(query.NewName))
                 device.Name = query.NewName;
+
             if (!string.IsNullOrEmpty(query.NewSerial))
                 device.SerialNumber = query.NewSerial;
 
             var entry = _context.Entry(device);
+
             if (entry.State == EntityState.Detached)
                 _context.Devices.Update(device);
 

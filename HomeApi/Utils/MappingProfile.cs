@@ -4,6 +4,7 @@ using HomeApi.Contracts.Models.Home;
 using HomeApi.Contracts.Models.Devices;
 using HomeApi.Contracts.Models.Rooms;
 using HomeApi.Data.Models;
+using HomeApi.Data.Queries;
 
 namespace HomeApi.Utils
 {
